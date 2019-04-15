@@ -5,6 +5,7 @@
     <b-button variant="danger" v-on:click="addCounter">+</b-button>
     &nbsp;
     <b-button variant="success" v-on:click="subCounter">-</b-button>
+    <br>
   </div>
 </template>
 

@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <Counter/>
+    <FirestoreExam/>
   </div>
 </template>
 
 <script>
   import Counter from './components/Counter'
+  import FirestoreExam from './components/FirestoreExam'
 
   export default {
     name: 'app',
     components: {
       Counter,
+      FirestoreExam
     },
   }
 </script>
