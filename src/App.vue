@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <p>Current route name: {{ $route.name }}</p>
+    <p>Current route name: {{ this.$route.path }}</p>
     <ul>
       <li>
         <router-link to="/counter">카운터</router-link>
