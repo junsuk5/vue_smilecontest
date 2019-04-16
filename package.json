@@ -13,7 +13,8 @@
     "bootstrap-vue": "^2.0.0-rc.18",
     "core-js": "^2.6.5",
     "firebase": "^5.9.4",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.6.0",

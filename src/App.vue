@@ -1,23 +1,24 @@
 <template>
   <div id="app">
-    <Counter/>
-    <MovieUpcoming/>
-    <!--<FirestoreExam/>-->
+    <p>Current route name: {{ $route.name }}</p>
+    <ul>
+      <li>
+        <router-link to="/counter">카운터</router-link>
+      </li>
+      <li>
+        <router-link to="/firestore">Firestore</router-link>
+      </li>
+      <li>
+        <router-link to="/movies">영화정보</router-link>
+      </li>
+    </ul>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-  import Counter from './components/Counter'
-  import FirestoreExam from './components/FirestoreExam'
-  import MovieUpcoming from './components/MovieUpcoming'
-
   export default {
     name: 'app',
-    components: {
-      MovieUpcoming,
-      Counter,
-      // FirestoreExam
-    },
   }
 </script>
 
