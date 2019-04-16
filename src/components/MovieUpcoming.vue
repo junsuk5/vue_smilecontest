@@ -1,7 +1,7 @@
 <template>
   <div>
     최신 영화 목록
-    <input v-model="query" v-on:change="search">
+    <input v-model="query">
     <br>
     <article v-for="(movie, idx) in filteredMovies" :key="idx">
       <img v-bind:src="'https://image.tmdb.org/t/p/w500' + movie.poster_path" width="100" height="100" alt=""/>
@@ -31,8 +31,10 @@
             this.filteredMovies = this.movies
           })
       },
-      search: function () {
-        this.filteredMovies = this.movies.filter(movie => movie.title.toLowerCase().includes(this.query))
+    },
+    watch: {
+      query: function (query) {
+        this.filteredMovies = this.movies.filter(movie => movie.title.toLowerCase().includes(query))
       }
     },
     created () {
