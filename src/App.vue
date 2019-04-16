@@ -1,19 +1,22 @@
 <template>
   <div id="app">
     <Counter/>
-    <FirestoreExam/>
+    <MovieUpcoming/>
+    <!--<FirestoreExam/>-->
   </div>
 </template>
 
 <script>
   import Counter from './components/Counter'
   import FirestoreExam from './components/FirestoreExam'
+  import MovieUpcoming from './components/MovieUpcoming'
 
   export default {
     name: 'app',
     components: {
+      MovieUpcoming,
       Counter,
-      FirestoreExam
+      // FirestoreExam
     },
   }
 </script>

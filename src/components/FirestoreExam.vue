@@ -3,7 +3,7 @@
     firestore
 
     <article v-for="(rank, idx) in ranks" :key="idx">
-      <img v-bind:src="rank.imageUrl" width="100" height="100" alt=""/>
+      <img v-bind:src="rank.imageUrl" width="200" height="200" alt=""/><br>
       <h1>{{rank.score}}</h1>
     </article>
   </div>
